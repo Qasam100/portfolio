@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Qasam Shahbaz - Motion Designer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <style>
+    .video-wrapper {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      margin-bottom: 20px;
+    }
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+    .filters {
+      text-align: center;
+      margin: 20px 0;
+    }
+    .filters button {
+      margin: 0 10px;
+      padding: 10px 20px;
+      border: none;
+      background: #eee;
+      cursor: pointer;
+    }
+    .filters button.active {
+      background: #333;
+      color: #fff;
+    }
+    .portfolio-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .portfolio-item {
+      width: 45%;
+    }
+    @media screen and (max-width: 768px) {
+      .portfolio-item {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body class="is-preload">
+
+  <section id="sidebar">
+    <div class="inner">
+      <nav>
+        <ul>
+          <li><a href="#intro">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <ul class="icons">
+        <li><a href="#" class="icon brands fa-facebook"><span class="label">Facebook</span></a></li>
+        <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+        <li><a href="#" class="icon brands fa-behance"><span class="label">Behance</span></a></li>
+        <li><a href="#" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+      </ul>
+    </div>
+  </section>
+
+  <div id="wrapper">
+    <section id="intro" class="wrapper style1 fullscreen fade-up">
+      <div class="inner">
+        <h1>Qasam Shahbaz</h1>
+        <p>Motion Designer | 2D, 3D, Logo Animation</p>
+      </div>
+    </section>
+
+    <section id="portfolio" class="wrapper style2">
+      <div class="inner">
+        <h2>Portfolio</h2>
+        <div class="filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="2d">2D Animation</button>
+          <button class="filter-btn" data-filter="3d">3D Animation</button>
+          <button class="filter-btn" data-filter="logo">Logo Reveals</button>
+          <button class="filter-btn" data-filter="creative">Creatives</button>
+        </div>
+        <div class="portfolio-grid" id="portfolio-grid"></div>
+      </div>
+    </section>
+
+    <section id="contact" class="wrapper style1 fade-up">
+      <div class="inner">
+        <h2>Contact Me</h2>
+        <p>Email: qasam@example.com</p>
+        <p>Phone: +92-XXXXXXXXXX</p>
+      </div>
+    </section>
+  </div>
+
+  <script src="assets/js/videos.js"></script>
+</body>
+</html>
